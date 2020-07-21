@@ -31,6 +31,7 @@ import { PradeepdialogComponent } from './pradeepdialog/pradeepdialog.component'
 import { PradeepdialogExampleComponent } from './pradeepdialog-example/pradeepdialog-example.component';
 import { PradeepdatatableComponent } from './pradeepdatatable/pradeepdatatable.component';
 import { PradeepdatatablefilteringComponent } from './pradeepdatatablefiltering/pradeepdatatablefiltering.component';
+import { PradeepdatatablepaginationComponent } from './pradeepdatatablepagination/pradeepdatatablepagination.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,8 @@ import { PradeepdatatablefilteringComponent } from './pradeepdatatablefiltering/
     PradeepdialogComponent,
     PradeepdialogExampleComponent,
     PradeepdatatableComponent,
-    PradeepdatatablefilteringComponent
+    PradeepdatatablefilteringComponent,
+    PradeepdatatablepaginationComponent
   ],
   entryComponents:[CustomSnackBarComponent,PradeepdialogExampleComponent],
   imports: [
