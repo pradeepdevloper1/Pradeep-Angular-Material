@@ -1,0 +1,45 @@
+<div>
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    <mat-icon >star</mat-icon>
+    <mat-icon >gif</mat-icon>
+</div>
+
+
+<p>Badge</p>
+<div>
+    <span matBadge="5" >Notification</span>
+</div>
+<div>
+    <span matBadge="5"  matBadgePosition="below before">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="below after">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above before">Notification</span>
+</div> 
+<p>Badge position</p>
+<div>
+    <span matBadge="5"  matBadgePosition="above after" matBadgeSize="small">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeSize="medium">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeSize="large">Notification</span>
+</div> 
+<p>Badge color</p>
+<div>
+    <span matBadge="5"  matBadgePosition="above after" matBadgeColor="primary">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeColor="accent">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeColor="warn">Notification</span>
+</div> 
+
+<p>overlap</p>
+<div>
+    <span [matBadge]="Notification" [matBadgeHidden]="Notification===0" matBadgePosition="above after" matBadgeColor="warn">Notification</span>
+</div> 

@@ -1,0 +1,118 @@
+<button mat-raised-button>Hello world</button>
+<div class="mat-display-4">This is display 4</div>
+<div class="mat-display-3">This is display 3</div>
+<div class="mat-display-2">This is display 2</div>
+<div class="mat-display-1">This is display 1</div>
+
+<div class="mat-headline">This is Headline</div>
+<div class="mat-title">This is Title</div>
+<div class="mat-subheadng-2">This  is Subheading 2 </div>
+<div class="mat-subheading-1">This is SubHeading 1</div>
+
+<div class="mat-typography">
+  <h1>This is Heading 1</h1>
+  <h2>This is Heading 2</h2>
+  <h3>This is Heading 3</h3>
+  <h4>This is Heading 4</h4>
+</div>
+
+<div>
+  <button mat-button>MatButton</button>
+  <button mat-raised-button>RaisedButton</button>
+  <button mat-flat-button>FlatButton</button>
+  <button mat-stroked-button>StrokedButton</button>
+</div>
+<div>
+  <button mat-icon-button>matIconButton</button>
+  <button mat-fab>MatFab</button>
+  <button mat-mini-fab>MatMiniFab</button>
+</div>
+<div>
+  <button  color="primary" mat-button>Primary</button>
+  <button  color="accent" mat-button>accent</button>
+  <button  color="warn" mat-button>warn</button>
+</div>
+<div>
+  <button  color="primary" mat-raised-button>Primary</button>
+  <button  color="accent" mat-raised-button>accent</button>
+  <button  color="warn" mat-raised-button>warn</button>
+</div>
+<div>
+  <button  color="primary" mat-flat-button>Primary</button>
+  <button  color="accent" mat-flat-button>accent</button>
+  <button  color="warn" mat-flat-button>warn</button>
+</div>
+<div>
+  <button  color="primary" mat-stroked-button>Primary</button>
+  <button  color="accent" mat-stroked-button>accent</button>
+  <button  color="warn" mat-stroked-button>warn</button>
+</div>
+<section>
+  <div class="example-label">Basic</div>
+  <div class="example-button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+    <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+</section>
+
+<section>
+  <div class="example-label">Raised</div>
+  <div class="example-button-row">
+    <button mat-raised-button>Basic</button>
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <button mat-raised-button disabled>Disabled</button>
+    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+</section>
+
+<section>
+  <div class="example-label">Stroked</div>
+  <div class="example-button-row">
+    <button mat-stroked-button>Basic</button>
+    <button mat-stroked-button color="primary">Primary</button>
+    <button mat-stroked-button color="accent">Accent</button>
+    <button mat-stroked-button color="warn">Warn</button>
+    <button mat-stroked-button disabled>Disabled</button>
+    <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+  </section>
+<div>Angular Material Button Toggle</div>
+
+<mat-button-toggle-group  #toggleGroup="matButtonToggleGroup" multiple name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+  </mat-button-toggle-group>{{toggleGroup.value}}
+
+
+  <p>
+    Default appearance:
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+    </mat-button-toggle-group>
+  </p>
+  
+  <p>
+    Legacy appearance:
+    <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+    </mat-button-toggle-group>
+  </p>
+
+
+
+  
+<mat-button-toggle #toggleBtn  value="bold">Bold</mat-button-toggle>{{toggleBtn.checked}}
+
+<mat-button-toggle #toggleBtn2  checked disableRipple disabled value="bold">Bold</mat-button-toggle>{{toggleBtn2.checked}}
+ 

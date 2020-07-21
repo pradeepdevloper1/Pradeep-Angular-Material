@@ -1,0 +1,23 @@
+<button class="center" mat-flat-button [matMenuTriggerFor]="appMenu" >Menu</button>
+<mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+</mat-menu>
+<mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Vue</button>
+</mat-menu>
+
+<mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent>
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item [matMenuTriggerFor]="logoutMenu">Logout</button>
+    </ng-template>
+</mat-menu>
+<button mat-flat-button [matMenuTriggerFor]="lazyMenu" >PradeepKumar</button>
+
+<mat-menu #logoutMenu="matMenu">
+    <button mat-menu-item>MyProfile</button>
+    <button mat-menu-item>Logout</button>
+</mat-menu>
